@@ -1,9 +1,14 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
 import './Footer.css';
 
 function Footer() {
     return (
-        <h1>Footer</h1>
+            <Navbar className="fixed-bottom mr-auto">
+                <Navbar.Text>
+                    Footer Filler Text 
+                </Navbar.Text>
+            </Navbar>
     );
 }
 
