@@ -8,7 +8,13 @@ import Resources from './pages/Resources/Resources';
 import FindOpportunities from './pages/FindOpportunities/FindOpportunities';
 import Login from './pages/Login/Login';
 import SignUp from './pages/SignUp/SignUp';
+
 import { useAuth0 } from "./react-auth0-spa";
+
+import Footer from './components/Footer/Footer';
+import HomeMission from './components/HomeMission/HomeMission';
+import HomeImage from './components/HomeImage/HomeImage';
+import LoginDiv from './components/LoginDiv/LoginDiv';
 
 
 function App() {
@@ -21,8 +27,7 @@ function App() {
 
     <Router>
       <div className="App">
-        <p>Hello World</p>
-
+        
         <NavbarHome />
 
         <Route exact path="/" component={Home}></Route>
@@ -31,6 +36,10 @@ function App() {
         <Route exact path="/FindOpportunities" component={FindOpportunities}></Route>
         <Route exact path="/Login" component={Login}></Route>
         <Route exact path="/SignUp" component={SignUp}></Route>
+
+        <HomeImage />
+        <HomeMission />
+        <Footer />
 
 
       </div>

@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image';
 import './HomeImage.css';
 
 function HomeImage() {
     return (
-        <h1>HomeImage</h1>
+        <Image src="https://via.placeholder.com/468x60" />
     );
 }
 
