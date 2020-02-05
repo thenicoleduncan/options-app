@@ -11,9 +11,6 @@ import SignUp from './pages/SignUp/SignUp';
 import { useAuth0 } from "./react-auth0-spa";
 
 import Footer from './components/Footer/Footer';
-import HomeMission from './components/HomeMission/HomeMission';
-import HomeImage from './components/HomeImage/HomeImage';
-
 
 function App() {
   const { loading } = useAuth0();

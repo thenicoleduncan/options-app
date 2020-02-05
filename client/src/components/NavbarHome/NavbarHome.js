@@ -12,20 +12,29 @@ function NavbarHome() {
 
 
     return (
-        <div>
-          <Navbar className="pt-5 navnav" variant="dark">
-            <div>
-                <img class="logo" src="options-main-logo.PNG" alt="Options Logo"></img>
+        <div className="container">
+
+            <div className="row">
+
+                <div className="col-lg-4">
+                    <a href="/"><img class="logo" src="options-main-logo.PNG" alt="Options Logo"></img></a>
+                </div>
+
+                <div className="col-lg-8">
+                    <Navbar className="pt-5 navnav" variant="dark">
+                        <Nav className="mr-auto">
+                            <NavLink className="p-3" to="/">Home </NavLink>
+                            <NavLink className="p-3" to="/Blog">Blog </NavLink>
+                            <NavLink className="p-3" to="/Resources">Resources </NavLink>
+                            <NavLink className="p-3" to="/FindOpportunities">Finding Opportunities </NavLink>
+                            <a href="https://www.facebook.com/"><img className="icon" src="facebook.PNG"></img></a>
+                            <a href="https://www.instagram.com/"><img className="icon" src="instagram.PNG"></img></a>
+                        </Nav>
+                    </Navbar>
+                </div>
+
             </div>
-            <Nav className="mr-auto">
-                <NavLink className="pr-2" to="/">Home </NavLink>
-                <NavLink className="pr-2" to="/Blog">Blog </NavLink>
-                <NavLink className="pr-2" to="/Resources">Resources </NavLink>
-                <NavLink className="pr-2" to="/FindOpportunities">Find Opportunities </NavLink>
-                <NavLink className="pr-2" to="/Login">Login </NavLink>
-            </Nav>
-        </Navbar>
-            
+
             <div>
                 {!isAuthenticated && (
                     <button onClick={() => loginWithRedirect({})}>Log in</button>

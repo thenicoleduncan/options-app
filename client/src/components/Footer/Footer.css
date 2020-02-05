@@ -1,0 +1,12 @@
+.MDBFooter {
+    background-color: orchid !important;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: none;
+}

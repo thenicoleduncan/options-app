@@ -4,7 +4,7 @@ import './HomeImage.css';
 
 function HomeImage() {
     return (
-        <Image src="https://via.placeholder.com/468x60" />
+        <Image src="home-image.PNG" alt="Many Doors" className="home-image" />
     );
 }
 
