@@ -1,0 +1,16 @@
+.logo {
+    width: 18rem;
+    /* float: left; */
+}
+
+.pr-2 {
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .pr-2 {
+      margin: 1rem;
+    }
+  }
