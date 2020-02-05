@@ -3,7 +3,9 @@ import './BlogTitle.css';
 
 function BlogTitle() {
     return (
-        <h1>BlogTitle</h1>
+        <div>
+            <img class="blog-title" src="blog-main.PNG" alt="Blog Title"></img>
+        </div>
     );
 }
 

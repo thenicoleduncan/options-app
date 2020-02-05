@@ -3,7 +3,9 @@ import './ResourceTitle.css';
 
 function ResourceTitle() {
     return (
-        <h1>ResourceTitle</h1>
+        <div>
+            <img class="resources-title" src="resources-main.PNG" alt="Resources Title"></img>
+        </div>
     );
 }
 

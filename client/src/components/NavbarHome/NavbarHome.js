@@ -13,15 +13,19 @@ function NavbarHome() {
 
     return (
         <div>
-
-            <Navbar className="pt-5 navnav" variant="dark">
-                <Nav className="mr-auto">
-                    <NavLink className="pr-2" to="/">home</NavLink>
-                    <NavLink className="pr-2" to="/Blog">blog</NavLink>
-                    <NavLink className="pr-2" to="/Resources">resources</NavLink>
-                    <NavLink className="pr-2" to="/FindOpportunities">find opportunities</NavLink>
-                </Nav>
-            </Navbar>
+          <Navbar className="pt-5 navnav" variant="dark">
+            <div>
+                <img class="logo" src="options-main-logo.PNG" alt="Options Logo"></img>
+            </div>
+            <Nav className="mr-auto">
+                <NavLink className="pr-2" to="/">Home </NavLink>
+                <NavLink className="pr-2" to="/Blog">Blog </NavLink>
+                <NavLink className="pr-2" to="/Resources">Resources </NavLink>
+                <NavLink className="pr-2" to="/FindOpportunities">Find Opportunities </NavLink>
+                <NavLink className="pr-2" to="/Login">Login </NavLink>
+            </Nav>
+        </Navbar>
+            
             <div>
                 {!isAuthenticated && (
                     <button onClick={() => loginWithRedirect({})}>Log in</button>

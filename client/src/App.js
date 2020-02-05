@@ -37,8 +37,6 @@ function App() {
         <Route exact path="/Login" component={Login}></Route>
         <Route exact path="/SignUp" component={SignUp}></Route>
 
-        <HomeImage />
-        <HomeMission />
         <Footer />
 
 
