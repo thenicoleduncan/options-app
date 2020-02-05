@@ -3,14 +3,33 @@
     /* float: left; */
 }
 
-.pr-2 {
+.logo:hover {
+  text-decoration: none;
+  background-color: none;
+}
+
+.p-3 {
     color: black;
-    margin: 20px;
+    padding: 20px;
     text-decoration: none;
 }
+
+.p-3:hover {
+  background-color: #f0f8ff;
+  color: #b8860b;
+  text-decoration: none;
+}
+
+.icon {
+  width: 1.5rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
 
 @media only screen and (max-width: 600px) {
     .pr-2 {
       margin: 1rem;
     }
+
   }
