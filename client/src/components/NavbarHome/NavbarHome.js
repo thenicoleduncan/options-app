@@ -31,6 +31,7 @@ function NavbarHome() {
                             <a href="https://www.instagram.com/"><img className="icon" src="instagram.PNG"></img></a>
                         </Nav>
                     </Navbar>
+                    {/* comment */}
                 </div>
 
             </div>
