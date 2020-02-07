@@ -6,7 +6,7 @@ class ResourceCard extends React.Component {
     return (
       <div>
 
-        <div className="card resource-card ml-5 mt-5">
+        <div className="card resource-card ml-5 mt-5 d-flex justify-content-center">
           <img className="card-img-top" src="img2.PNG" alt="Card image cap"></img>
           <div className="card-body">
             <h5 className="card-title">University of Arizona Coding Boot Camp</h5>

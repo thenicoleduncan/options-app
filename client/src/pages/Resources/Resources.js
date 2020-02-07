@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ResourceTitle from '../../components/ResourceTitle/ResourceTitle';
 import ResourceCard from '../../components/ResourceCard/ResourceCard';
 import ResourceButton from '../../components/ResourceButton/ResourceButton';
+import AddResourceBtn from "../../components/AddResourceBtn/AddResourceBtn";
 
 class Resources extends Component {
   render() {
@@ -9,6 +10,7 @@ class Resources extends Component {
       <div className='container'>
         <ResourceTitle />
         <ResourceButton />
+        <AddResourceBtn />
 
         <div className="row">
         <ResourceCard />
