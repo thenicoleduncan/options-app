@@ -17,7 +17,7 @@ function NavbarHome() {
             <div className="row">
 
                 <div className="col-lg-4">
-                    <a href="/"><img class="logo" src="options-main-logo.PNG" alt="Options Logo"></img></a>
+                    <a href="/"><img className="logo" src="options-main-logo.PNG" alt="Options Logo"></img></a>
                 </div>
 
                 <div className="col-lg-8">
