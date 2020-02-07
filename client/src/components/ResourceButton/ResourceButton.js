@@ -1,18 +1,23 @@
 import React from 'react';
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 import './ResourceButton.css';
-
-import { useAuth0 } from '../../react-auth0-spa';
+import { useAuth0 } from "../../react-auth0-spa";
 
 function ResourceButton() {
-    const { loading } = useAuth0();
+    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
+
+
     return (
-        <div>
-            
+        <div className="container">
+
+            <div>
+                {!isAuthenticated && (
+                    <button onClick={() => loginWithRedirect({})}>Log in</button>
+                )}
+
+                {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+            </div>
 
         </div>
     );
