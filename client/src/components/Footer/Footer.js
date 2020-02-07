@@ -11,21 +11,21 @@ function Footer() {
                 <MDBContainer fluid className="text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
-                            <h5 className="title"><strong>Tell us your success stories!</strong></h5>
-                            <p>
-                                Email us at <a href="...">success@options.com</a>.
-                            </p>
+                                <h5 className="title"><strong>Tell us your success stories!</strong></h5>
+                                <p>
+                                    Email us at <a href="...">success@options.com</a>.
+                                </p>
                         </MDBCol>
                         <MDBCol md="6">
-                            <h5 className="title">Follow us on social</h5>
-                            <ul>
-                                <li className="list-unstyled">
-                                    <a href="https://www.facebook.com"><img className="icon" src="facebook.PNG" alt="facebook"></img></a>
-                                </li>
-                                <li className="list-unstyled">
-                                    <a href="https://www.instagram.com"><img className="icon" src="instagram.PNG" alt="instagram"></img></a>
-                                </li>
-                            </ul>
+                                <h5 className="title">Follow us on social</h5>
+                                <ul>
+                                    <li className="list-unstyled">
+                                        <a href="https://www.facebook.com"><img className="icon" src="facebook.PNG" alt="facebook"></img></a>
+                                    </li>
+                                    <li className="list-unstyled pl-0">
+                                        <a href="https://www.instagram.com"><img className="icon" src="instagram.PNG" alt="instagram"></img></a>
+                                    </li>
+                                </ul>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
