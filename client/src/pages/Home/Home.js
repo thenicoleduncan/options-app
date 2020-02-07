@@ -4,6 +4,7 @@ import HomeMission from '../../components/HomeMission/HomeMission';
 import PictureDiv from "../../components/PictureDiv/PictureDiv";
 import InfoDiv from '../../components/InfoDiv/InfoDiv';
 import TitleDiv from "../../components/TitleDiv/TitleDiv";
+import FormComp from '../../components/FormComp/FormComp';
 
 class Home extends Component {
   render() {
