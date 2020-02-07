@@ -4,7 +4,7 @@ import './BlogTitle.css';
 function BlogTitle() {
     return (
         <div>
-            <img class="blog-title" src="blog-main.PNG" alt="Blog Title"></img>
+            <img className="blog-title" src="blog-main.PNG" alt="Blog Title"></img>
         </div>
     );
 }

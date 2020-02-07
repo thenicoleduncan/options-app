@@ -11,7 +11,7 @@ class ResourceCard extends React.Component {
           <div className="card-body">
             <h5 className="card-title">University of Arizona Coding Boot Camp</h5>
             <p className="card-text">Learn to code in 6 months! This boot camp is geared, not only to hel you learn, but get a job after you are finished.</p>
-            <a href="#" class="btn btn-primary">Check it out</a>
+            <a href="#" className="btn btn-primary">Check it out</a>
           </div>
         </div>
 
