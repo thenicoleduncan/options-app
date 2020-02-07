@@ -10,7 +10,7 @@ function TitleDiv() {
             <h1 className="mission-title">Finding Alternative Forms of Education</h1>
             <hr className="my-4" width="50%" />
             <p>
-                Education comes in many forms.
+                Boot Camps, Paid Apprenticeships, Tradeschools and more.
                 </p>
         </Container>
         

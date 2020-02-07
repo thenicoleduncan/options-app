@@ -7,30 +7,23 @@ function Footer() {
     return (
         <div>
 
-            <MDBFooter className="font-small pt-4 mt-4 bg-dark text-light">
-                <MDBContainer fluid className="text-center text-md-left">
+            <MDBFooter className="font-small pt-4 mt-4">
+                <MDBContainer fluid className="text-md-left">
                     <MDBRow>
                         <MDBCol md="6">
-                            <h5 className="title">Footer Content</h5>
+                            <h5 className="title"><strong>Tell us your success stories!</strong></h5>
                             <p>
-                                Here you can use rows and columns here to organize your footer
-                                content.
-              </p>
+                                Email us at <a href="...">success@options.com</a>.
+                            </p>
                         </MDBCol>
                         <MDBCol md="6">
                             <h5 className="title">Follow us on social</h5>
                             <ul>
                                 <li className="list-unstyled">
-                                    <a href="#!">Facebook</a>
+                                    <a href="https://www.facebook.com"><img className="icon" src="facebook.PNG" alt="facebook"></img></a>
                                 </li>
                                 <li className="list-unstyled">
-                                    <a href="#!">Instagram</a>
-                                </li>
-                                <li className="list-unstyled">
-                                    <a href="#!">Twitter</a>
-                                </li>
-                                <li className="list-unstyled">
-                                    <a href="#!">Youtube</a>
+                                    <a href="https://www.instagram.com"><img className="icon" src="instagram.PNG" alt="instagram"></img></a>
                                 </li>
                             </ul>
                         </MDBCol>
