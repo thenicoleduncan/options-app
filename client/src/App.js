@@ -11,6 +11,7 @@ import SignUp from './pages/SignUp/SignUp';
 import { useAuth0 } from "./react-auth0-spa";
 
 import Footer from './components/Footer/Footer';
+import Form from 'react-bootstrap/Form';
 
 function App() {
   const { loading } = useAuth0();
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/Blog" component={Blog}></Route>
         <Route exact path="/Resources" component={Resources}></Route>
         <Route exact path="/FindOpportunities" component={FindOpportunities}></Route>
+        <Route exact path="/Form" component={Form}></Route>
 
         <Footer />
 
