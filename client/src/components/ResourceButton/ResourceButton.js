@@ -9,17 +9,17 @@ function ResourceButton() {
 
 
     return (
-        <div className="container">
+        // <div className="container">
 
-            <div>
+            <div className="container">
                 {!isAuthenticated && (
-                    <button onClick={() => loginWithRedirect({})}>Log in</button>
+                    <button className="btn text-light" onClick={() => loginWithRedirect({})}>Log in</button>
                 )}
 
-                {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+                {isAuthenticated && <button className="btn text-light" onClick={() => logout()}>Log out</button>}
             </div>
 
-        </div>
+        // </div>
     );
 }
 
