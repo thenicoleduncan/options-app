@@ -17,10 +17,10 @@ This app is designed to help users learn more about alternative forms of post hi
 
 ### Created By
 
-Brooke Parrish | Team Lead & Front End
-Nicole Duncan | Front End, Design & Content
-Joshua Einsel | Back End, AuthO
-Eric Figueroa | Back End, MongoDB Atlas
+Brooke Parrish | Team Lead & Front End <br />
+Nicole Duncan | Front End, Design & Content <br />
+Joshua Einsel | Back End, AuthO <br />
+Eric Figueroa | Back End, MongoDB Atlas <br />
 
 ### Technologies Used
 
