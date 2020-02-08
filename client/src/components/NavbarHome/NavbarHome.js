@@ -27,8 +27,8 @@ function NavbarHome() {
                             <NavLink className="p-3" to="/Blog">Blog </NavLink>
                             <NavLink className="p-3" to="/Resources">Resources </NavLink>
                             <NavLink className="p-3" to="/FindOpportunities">Finding Opportunities </NavLink>
-                            <a href="https://www.facebook.com/"><img className="icon" src="facebook.PNG"></img></a>
-                            <a href="https://www.instagram.com/"><img className="icon" src="instagram.PNG"></img></a>
+                            <a href="https://www.facebook.com/"><img src="facebook.PNG" className="icon" ></img></a>
+                            <a href="https://www.instagram.com/"><img src="instagram.PNG" className="icon"></img></a>
                         </Nav>
                     </Navbar>
                     {/* comment */}
