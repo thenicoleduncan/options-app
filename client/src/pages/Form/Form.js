@@ -6,6 +6,7 @@ class Form extends Component {
     return (
       <div>
         <FormComp />
+        <p>hello world</p>
       </div>
     );
   }

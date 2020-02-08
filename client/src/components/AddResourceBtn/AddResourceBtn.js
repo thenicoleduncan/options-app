@@ -11,10 +11,10 @@ function AddResourceBtn() {
     return (
         <div>
             {!isAuthenticated && (
-                <button onClick={() => loginWithRedirect({})}>Log in to add a resource</button>
+                <p>Log in to Add a Resource</p>
             )}
 
-            {isAuthenticated && <button>Add a Resource</button>}
+            {isAuthenticated && <a href="/Form"><button>Add a Resource</button></a>}
 
         </div>
     );

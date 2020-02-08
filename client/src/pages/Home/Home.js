@@ -16,7 +16,6 @@ class Home extends Component {
         <TitleDiv />
         <PictureDiv />
         <InfoDiv />
-        <FormComp />
       </div>
     );
   }
