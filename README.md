@@ -24,16 +24,16 @@ Eric Figueroa | Back End, MongoDB Atlas <br />
 
 ### Technologies Used
 
-React.js
-Node
+React.js <br />
+Node <br />
 
-Bootstrap
-React Bootstrap
-MDB React
+Bootstrap <br />
+React Bootstrap <br />
+MDB React <br />
 
-MongoDB
-Mongoose
-MongoDB Atlas
+MongoDB <br />
+Mongoose <br />
+MongoDB Atlas <br />
 
 AuthO
 
