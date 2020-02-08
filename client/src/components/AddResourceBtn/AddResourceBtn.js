@@ -9,12 +9,12 @@ function AddResourceBtn() {
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
     return (
-        <div>
+        <div className="container">
             {!isAuthenticated && (
-                <p>Log in to Add a Resource</p>
+                <p className="ml-3">Log in to Add a Resource</p>
             )}
 
-            {isAuthenticated && <a href="/Form"><button>Add a Resource</button></a>}
+            {isAuthenticated && <a href="/Form"><button className="btn text-light">Add a Resource</button></a>}
 
         </div>
     );
