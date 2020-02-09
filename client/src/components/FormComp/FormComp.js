@@ -4,7 +4,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 
+
+
 class FormComp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      company: '',
+      title: '',
+      description: '',
+      link: ''
+    }
+  }
     render() {
       return (
         <div className="container mt-5 mb-5">
@@ -15,7 +26,7 @@ class FormComp extends React.Component {
                 Name, Company and Role
               </Form.Label>
               <Col sm={10}>
-                <Form.Control type="text" placeholder="Name, Company and Role" name="company"  onChange={this.handleChange}  />
+                <Form.Control type="text" placeholder="Name, Company and Role" name="company"  onChange={this.handleChange} value={this.state.company} />
               </Col>
             </Form.Group>
 
@@ -25,7 +36,7 @@ class FormComp extends React.Component {
                   Title
                 </Form.Label>
                 <Col sm={10}>
-                <Form.Control type="text" name="title" placeholder="Title"  onChange={this.handleChange}/>
+                <Form.Control type="text" name="title" placeholder="Title" value={this.state.title} onChange={this.handleChange}/>
                 
               </Col>
             </Form.Group> 
@@ -39,7 +50,7 @@ class FormComp extends React.Component {
                   Description
                 </Form.Label>
                 <Col sm={10}>
-                <Form.Control type="text" placeholder="Description" name="description" onChange={this.handleChange} 
+                <Form.Control type="text" placeholder="Description" name="description" value={this.state.description} onChange={this.handleChange} 
                   />
               </Col>
             </Form.Group> 
@@ -51,7 +62,7 @@ class FormComp extends React.Component {
                   Link to Website
                 </Form.Label>
                 <Col sm={10}>
-                <Form.Control type="text" placeholder="URL" name="link"  onChange={this.handleChange}/>
+                <Form.Control type="text" placeholder="URL" name="link" value={this.state.link} onChange={this.handleChange}/>
               </Col>
             </Form.Group> 
             </fieldset>
@@ -61,34 +72,6 @@ class FormComp extends React.Component {
       );
     }
 
-
-
-
-
-    state = {
-      title: '',
-      company:'',
-      Description: '',
-      link:'',
-      posts: []
-    };
-    
-    componentDidMount = () => {
-      this.getBlogPost();
-    }
-    
-    getBlogPost = () => {
-      axios.get('/api')
-      .then((response) => {
-        const data = response.data;
-        this.setState({posts: data});
-        console.log('Data has been received!!');
-      })
-      .catch(() => {
-        alert('Error retrieving data!!');
-      });
-    }
-    
     handleChange = (event) => {
       const target = event.target;
       const name = target.name;
@@ -101,12 +84,15 @@ class FormComp extends React.Component {
     
       sumbit = (event) => {
         event.preventDefault();
-    
+
         const payload = {
           company: this.state.company,
           title: this.state.title,
           description: this.state.description,
-          link: this.state.company
+          link: this.state.link,
+
+          
+          
         };
     
         axios({
@@ -117,7 +103,7 @@ class FormComp extends React.Component {
           .then(() => {
             console.log('Data has been sent to the server');
             this.resetUserInputs();
-            this.getBlogPost();
+            // this.getBlogPost();
     
           })
           .catch(() => {
@@ -125,73 +111,16 @@ class FormComp extends React.Component {
     
           });;
     
-    
-    
       };
     
       resetUserInputs = () => {
         this.setState({
+          company:'',
           title: '',
-          body: ''
+          description: '',
+          link:'',
         });
       };
-    
-      displayBlogPost = (posts) => {
-        if (!posts.length) return null;
-    
-        return posts.map((post, index) => (
-          <div key={index}>
-            <h3>{post.title}</h3>
-            <p>{post.body}</p>
-          </div>
-        ));
-    
-      };
-    
-      
-    
-      // render() {
-    
-      //   console.log('State', this.state);
-      //   //JSX
-      //   return(
-      //     <div>
-      //       <h2>Welcome</h2>
-      //       <form onSubmit={this.sumbit}>
-      //         <div className="form-input">
-      //           <input 
-      //           type="text"
-      //           name="title"
-      //           placeholder="Title"
-      //           value={this.state.title}
-      //           onChange={this.handleChange} 
-      //           />
-      //         </div>
-      //         <div className="form-input">
-      //           <textarea
-      //            placeholder="Body"
-      //             name="body"
-      //              cols="30"
-      //               rows="10"
-      //                value={this.state.body}
-      //                 onChange={this.handleChange}
-      //                 >
-    
-      //                 </textarea>
-      //         </div>
-    
-      //         <button>Submit</button>
-      //       </form>
-    
-      //       <div className="blog-post">
-      //         {this.displayBlogPost(this.state.posts)}
-      //       </div>
-      //     </div>
-      //   );
-      // }
-
-
-
   }
 
   export default FormComp;

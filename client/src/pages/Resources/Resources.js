@@ -18,13 +18,12 @@ class Resources extends Component {
         </div>
 
         <div className="row">
-          <ResourceCard />
-          <ResourceCard />
-          <ResourceCard />
-          <ResourceCard />
-          <ResourceCard />
-          <ResourceCard />
+        <ResourceCard />
+       
+      
+    
         </div>
+        
 
         <br />
         <br />
@@ -32,7 +31,9 @@ class Resources extends Component {
 
       </div>
     );
-  }
+  };
+
+  
 }
 
 export default Resources;
