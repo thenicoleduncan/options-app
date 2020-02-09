@@ -9,17 +9,19 @@ class Resources extends Component {
     return (
       <div className='container'>
         <ResourceTitle />
-        <ResourceButton />
-        <AddResourceBtn />
+
+        <div className="row text-left">
+
+          <ResourceButton />
+          <AddResourceBtn />
+
+        </div>
 
         <div className="row">
         <ResourceCard />
        
-        
-        
-        
-        
-        
+      
+    
         </div>
         
 
