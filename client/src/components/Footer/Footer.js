@@ -16,7 +16,7 @@ function Footer() {
                                     Email us at <a href="...">success@options.com</a>.
                                 </p>
                         </MDBCol>
-                        <MDBCol md="7" className="text-right">
+                        <MDBCol md="7" className="text-md-right">
                                 <h5 className="title"><strong>Follow us on social</strong></h5>
                                     <a href="https://www.facebook.com"><img className="icon" src="facebook.PNG" alt="facebook"></img></a>                                    
                                     

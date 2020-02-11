@@ -21,15 +21,18 @@ function NavbarHome() {
                 </div>
 
                 <div className="col-lg-8">
-                    <Navbar className="pt-5 navnav" variant="dark">
-                        <Nav className="mr-auto">
-                            <NavLink className="p-3" to="/">Home </NavLink>
-                            <NavLink className="p-3" to="/Blog">Blog </NavLink>
-                            <NavLink className="p-3" to="/Resources">Resources </NavLink>
-                            <NavLink className="p-3" to="/FindOpportunities">Finding Opportunities </NavLink>
-                            <a href="https://www.facebook.com/"><img src="facebook.PNG" className="icon" ></img></a>
-                            <a href="https://www.instagram.com/"><img src="instagram.PNG" className="icon"></img></a>
-                        </Nav>
+                    <Navbar className="pt-5 navnav" variant="dark" expand="md" collapseOnSelect>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="nav-collapse mb-5"/>
+                        <Navbar.Collapse id="responsive-nav">
+                            <Nav className="mr-auto">
+                                <NavLink className="p-3" to="/">Home </NavLink>
+                                <NavLink className="p-3" to="/Blog">Blog </NavLink>
+                                <NavLink className="p-3" to="/Resources">Resources </NavLink>
+                                <NavLink className="p-3" to="/FindOpportunities">Finding Opportunities </NavLink>
+                                <a href="https://www.facebook.com/"><img src="facebook.PNG" className="icon" ></img></a>
+                                <a href="https://www.instagram.com/"><img src="instagram.PNG" className="icon"></img></a>
+                            </Nav>
+                        </Navbar.Collapse>
                     </Navbar>
                     {/* comment */}
                 </div>
