@@ -17,7 +17,7 @@ function NavbarHome() {
             <div className="row">
 
                 <div className="col-lg-4">
-                    <a href="/"><img className="logo" src="options-main-logo.PNG" alt="Options Logo"></img></a>
+                    <a href="/"><img className="logo" src="/options-main-logo.PNG" alt="Options Logo"></img></a>
                 </div>
 
                 <div className="col-lg-8">
@@ -27,8 +27,8 @@ function NavbarHome() {
                             <NavLink className="p-3" to="/Blog">Blog </NavLink>
                             <NavLink className="p-3" to="/Resources">Resources </NavLink>
                             <NavLink className="p-3" to="/FindOpportunities">Finding Opportunities </NavLink>
-                            <a href="https://www.facebook.com/"><img src="facebook.PNG" className="icon" ></img></a>
-                            <a href="https://www.instagram.com/"><img src="instagram.PNG" className="icon"></img></a>
+                            <a href="https://www.facebook.com/"><img src="/facebook.PNG" className="icon" ></img></a>
+                            <a href="https://www.instagram.com/"><img src="/instagram.PNG" className="icon"></img></a>
                         </Nav>
                     </Navbar>
                     {/* comment */}
