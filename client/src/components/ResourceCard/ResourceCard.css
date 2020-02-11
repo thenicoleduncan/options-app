@@ -6,3 +6,13 @@
     background-color: #2f4f4f;;
     border: none;
 }
+
+.btn:hover {
+    background-color: chocolate;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
