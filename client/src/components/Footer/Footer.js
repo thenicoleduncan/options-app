@@ -18,9 +18,9 @@ function Footer() {
                         </MDBCol>
                         <MDBCol md="7" className="text-md-right">
                                 <h5 className="title"><strong>Follow us on social</strong></h5>
-                                    <a href="https://www.facebook.com"><img className="icon" src="facebook.PNG" alt="facebook"></img></a>                                    
+                                    <a href="https://www.facebook.com"><img className="icon" src="/facebook.PNG" alt="facebook"></img></a>                                    
                                     
-                                    <a href="https://www.instagram.com"><img className="icon" src="instagram.PNG" alt="instagram"></img></a>
+                                    <a href="https://www.instagram.com"><img className="icon" src="/instagram.PNG" alt="instagram"></img></a>
                                                                  
                             
                         </MDBCol>
