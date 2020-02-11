@@ -13,7 +13,7 @@ class ResourceCard extends React.Component {
       posts: []
     };
   }
-  
+
   componentDidMount = () => {
     this.getBlogPost();
   }
@@ -34,16 +34,17 @@ class ResourceCard extends React.Component {
   render() {
 
     return (
-      <div>{
-        this.state.posts.map(post => (
+      <div className="flex-container">
+        {this.state.posts.map(post => (
 
-          <div className="card resource-card ml-5 mt-5 d-flex justify-content-center">
-            <img className="card-img-top" src="img2.PNG" alt="Card image cap"></img>
+          <div className="card resource-card ml-5 mt-5 justify-content-center">
+
+            <img className="card-img-top" src="a1.PNG" alt="Card image cap"></img>
             <div className="card-body">
 
               <div key={post.id}>
-                <h5>{post.company}</h5>
-                <p>{post.title}</p>
+                {/* <h5>{post.company}</h5> */}
+                <h4>{post.title}</h4>
                 <p>{post.description}</p>
                 <a href={post.link} target="_blank" className="btn btn-primary">Check it out</a>
               </div>
@@ -52,7 +53,7 @@ class ResourceCard extends React.Component {
 
             </div>
           </div>
-        ))};
+        ))}
       </div>
     );
   }
