@@ -14,7 +14,7 @@ function AddResourceBtn() {
                 <p className="ml-3">Log in to Add a Resource</p>
             )}
 
-            {isAuthenticated && <a href="/Form"><button className="btn text-light">Add a Resource</button></a>}
+            {isAuthenticated && <a href="/FormPage"><button className="btn text-light">Add a Resource</button></a>}
 
         </div>
     );
