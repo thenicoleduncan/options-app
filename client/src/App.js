@@ -11,9 +11,9 @@ import FindOpportunities from './pages/FindOpportunities/FindOpportunities';
 import { useAuth0 } from "./react-auth0-spa";
 
 import Footer from './components/Footer/Footer';
-import Form from 'react-bootstrap/Form';
-import FormComp from './components/FormComp/FormComp';
-import FormPage from './pages/Form/Form';
+// import Form from 'react-bootstrap/Form';
+// import FormComp from './components/FormComp/FormComp';
+import FormPage from './pages/FormPage/FormPage';
 
 function App() {
   const { loading } = useAuth0();
